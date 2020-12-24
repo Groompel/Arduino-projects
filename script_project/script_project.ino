@@ -168,6 +168,8 @@ void get_time() {
     lcd.setCursor(0, 1);
     lcd.print("Temp: ");
     lcd.print(temp);
+    Serial.println(time.gettime("d-m-Y, H:i:s, D")); // выводим время
+
 
     if ((time.Hours == 10 && time.minutes == 0 && time.seconds == 0)) {
       servo.write(0);
