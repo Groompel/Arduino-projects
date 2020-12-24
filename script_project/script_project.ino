@@ -156,7 +156,7 @@ void get_time() {
   //Real Time
 
   if (millis() - lastServoTime >= 1000) {
-    time.gettime("d-m-Y, H:i:s, D"));
+    time.gettime("d-m-Y, H:i:s, D");
     lastServoTime = millis();
     lcd.clear();
     lcd.setCursor(0, 0);
