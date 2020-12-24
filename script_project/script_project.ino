@@ -156,6 +156,7 @@ void get_time() {
   //Real Time
 
   if (millis() - lastServoTime >= 1000) {
+    time.gettime("d-m-Y, H:i:s, D"));
     lastServoTime = millis();
     lcd.clear();
     lcd.setCursor(0, 0);
@@ -168,7 +169,7 @@ void get_time() {
     lcd.setCursor(0, 1);
     lcd.print("Temp: ");
     lcd.print(temp);
-    Serial.println(time.gettime("d-m-Y, H:i:s, D")); // выводим время
+    
 
 
     if ((time.Hours == 10 && time.minutes == 0 && time.seconds == 0)) {
